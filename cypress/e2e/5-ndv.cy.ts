@@ -65,6 +65,7 @@ describe('NDV', () => {
 		cy.shouldNotHaveConsoleErrors();
 	});
 
+<<<<<<< HEAD
 	it('should disconect Switch outputs if rules order was changed', () => {
 		cy.createFixtureWorkflow('NDV-test-switch_reorder.json', 'NDV test switch reorder');
 		workflowPage.actions.zoomToFit();
@@ -85,6 +86,8 @@ describe('NDV', () => {
 		cy.contains('span', 'zero').should('exist');
 	});
 
+=======
+>>>>>>> 8335f3a641 (Remove a test)
 	it('should show correct validation state for resource locator params', () => {
 		workflowPage.actions.addNodeToCanvas('Typeform', true, true);
 		ndv.getters.container().should('be.visible');
